@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Montserrat:wght@100;200;500;600&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    color: #4a4a4a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Montserrat;
+    height: 70px;
+}
+
+nav .left img {
+    width: 150px;
+}
+
+nav .middle ul {
+    list-style: none;
+    display: flex;
+}
+
+nav .middle li {
+    margin-left: 70px;
+}
+
+nav .right button:nth-child(1) {
+    padding: 10px 20px;
+    border: 1px solid  #0070ba;
+    background-color: white;
+    border-radius: 30px;
+}
+
+nav .right button:nth-child(2) {
+    padding: 10px 20px;
+    border: 1px solid  #0070ba;
+    color: white;
+    background-color:  #0070ba;
+    border-radius: 30px;
+}
+
+.section-1 {
+    width: 100%;
+    height: 300px;
+    background-image: url(https://www.paypalobjects.com/marketing/web/gb/en/home/home-banner-desktop.jpg);
+    background-color: #121660;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+
+.section-1 h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    color: white;
+}
+
+.section-1 p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    width: 300px;
+    color: white;
+}
+
+.section-1 button {
+    width: 170px;
+    margin-top: 30px;
+    background-color: #FFC439;
+    color: #121660;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+    font-size: 1.25rem;
+    background-color: #f5f7fa;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    align-items: center;
+}
+
+.section-2 p {
+    width: 80%;
+}
+.section-2 button {
+    width: 170px;
+    background-color: #0070ba;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.section-3 {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-3 .left {
+    width: 50%;
+    margin-top: 30px;
+    color: #4a4a4a;
+}
+
+.section-3  .left h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+}
+
+.section-3 .left p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    width: 300px;
+}
+
+.section-3 .right {
+    width: 50%;
+}
+
+.section-3 a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    color: #0070ba;
+}
+
+
+.section-4 {
+    padding: 30px;
+    display: flex;
+    background-color: #f5f7fa;
+    justify-content: space-between;
+}
+
+.section-4 .right {
+    width: 50%;
+    margin-top: 30px;
+    color: #4a4a4a;
+}
+
+.section-4 a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    color: #0070ba;
+    margin-top: 20px;
+}
+
+.section-4  .right h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+}
+
+.section-4 .right p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    width: 300px;
+}
+
+.section-4 .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.payImg {
+    width: 300px;
+    margin: 0 30px;
+}
+
+.section-5 {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-5 .row {
+    width: 80%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-5 .row img {
+    margin-left: 10px;
+}
+
+.section-6 {    
+    background-color: #0d3685;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+.section-6 h1 {
+    color: white;
+    width: 70%;
+}
+
+.section-6 .button {
+    width: 230px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: #0d3685;
+    border: none;
+    background: #fff;
+}
+
+.section-6 .row {
+    display: flex;
+    margin-top: 30px;
+}
+.section-6 .button1 {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.section-7 {
+    padding: 50px 70px;
+}
+
+.section-7 p {
+    
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+}
+
+footer {
+    padding: 50px;
+}
+
+footer .row1 {
+    padding: 15px;
+}
+footer .row1 ul{
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    list-style: none;
+}
+
+footer .row1 li {
+    margin-left: 20px;
+}
+
+footer .row2  {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+padding: 20px;
+font-size: 1rem;
+line-height: 1.5;
+font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+}
+
+footer .row2 .left ul {
+    list-style: none;
+    display: flex;
+}
+
+footer .row2 .right ul {
+    list-style: none;
+    display: flex;
+}
+
+footer .row2 li {
+    margin-left: 15px;
+}
