@@ -113,11 +113,10 @@ nav .right button:nth-child(2) {
 .section-3 {
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .section-3 .left {
-    width: 50%;
     margin-top: 30px;
     color: #4a4a4a;
 }
@@ -136,7 +135,6 @@ nav .right button:nth-child(2) {
 }
 
 .section-3 .right {
-    width: 50%;
 }
 
 .section-3 a {
@@ -151,11 +149,10 @@ nav .right button:nth-child(2) {
     padding: 30px;
     display: flex;
     background-color: #f5f7fa;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .section-4 .right {
-    width: 50%;
     margin-top: 30px;
     color: #4a4a4a;
 }
@@ -182,7 +179,6 @@ nav .right button:nth-child(2) {
 }
 
 .section-4 .left {
-    width: 50%;
     display: flex;
     justify-content: center;
 }
