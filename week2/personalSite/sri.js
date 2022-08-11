@@ -1,9 +1,9 @@
-const name = document.getElementById('name');
+const namee = document.getElementById('name');
 const number = document.getElementById('number');
 const message = document.getElementById('message');
 const form = document.getElementById('submit-form');
 const btn = document.getElementById('btn');
-const email = document.getElementById('email');
+const Email = document.getElementById('email');
 
 const loading = document.getElementById('loading');
 
@@ -12,15 +12,16 @@ const loading = document.getElementById('loading');
 const nameL = document.getElementById('name-l');
 const numberL = document.getElementById('number-l');
 const messageL = document.getElementById('messageL');
+const emailL = document.getElementById('email-l')
 
 let val = 0;
 
 loading.style.display = 'none';
 
 form.addEventListener('submit',(e) => {
-    if(name.value === ''){
+    if(namee.value === ''){
         nameL.innerText = "Name cannot be empty"
-    }else if(!isNaN(name.value) ){
+    }else if(!isNaN(namee.value) ){
         nameL.innerText =  "Name should be alphabets"
     }else {
         nameL.innerText = ''
@@ -37,8 +38,17 @@ form.addEventListener('submit',(e) => {
     }else {
         messageL.innerText = ''
     }
+    
 
-    if(name.value === '' || !isNaN(name.value) || (number.value.length > 10 || number.value.length <10) || message.value === ''){
+    if(Email.value === ''){
+        emailL.innerText = 'This feild cannot be empty';
+    }else if(Email.value.includes('@gmail.com') ){
+        emailL.innerText = ''
+    }else {
+        emailL.innerText = 'Shoul contain "@gmail.com"'
+    }
+
+    if(name.value === '' || !isNaN(name.value) || (number.value.length > 10 || number.value.length <10) || message.value === '' || Email.value === ''|| Email.value.includes('@gmail.com')==false){
         val = 1
     }else {
         val = 0
@@ -46,6 +56,8 @@ form.addEventListener('submit',(e) => {
 
     
     console.log(val);
+
+    
 
 
 if (val == 0) {
@@ -70,5 +82,15 @@ if (val == 0) {
       
 })
 
+
+namee.addEventListener('input', (e) => {
+    if(namee.value === ''){
+        nameL.innerText = "Name cannot be empty"
+    }else if(!isNaN(namee.value) ){
+        nameL.innerText =  "Name should be alphabets"
+    }else {
+        nameL.innerText = ''
+    }
+})
 
 
