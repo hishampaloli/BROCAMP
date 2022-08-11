@@ -1331,15 +1331,8 @@ section {
 .res {
   display: flex;
   padding: 70px;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
-
-.res img {
-  width: 350px;
-  height: 80vh;
-  margin-top: 50px;
-  border-radius: 15px;
-}
-
 
