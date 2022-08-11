@@ -38,17 +38,17 @@ form.addEventListener('submit',(e) => {
     }else {
         messageL.innerText = ''
     }
-    
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if(Email.value === ''){
         emailL.innerText = 'This feild cannot be empty';
-    }else if(Email.value.includes('@gmail.com') ){
+    }else if(Email.value.match( /^[^ ]+@[^ ]+\.[a-z]{2,3}$/) ){
         emailL.innerText = ''
     }else {
-        emailL.innerText = 'Shoul contain "@gmail.com"'
+        emailL.innerText = 'Should use a valid email.'
     }
 
-    if(name.value === '' || !isNaN(name.value) || (number.value.length > 10 || number.value.length <10) || message.value === '' || Email.value === ''|| Email.value.includes('@gmail.com')==false){
+    if(name.value === '' || !isNaN(name.value) || (number.value.length > 10 || number.value.length <10) || message.value === '' || Email.value === ''|| Email.value.match( /^[^ ]+@[^ ]+\.[a-z]{2,3}$/) == false || /\d/.test(namee.value) == false){
         val = 1
     }else {
         val = 0
@@ -86,11 +86,19 @@ if (val == 0) {
 namee.addEventListener('input', (e) => {
     if(namee.value === ''){
         nameL.innerText = "Name cannot be empty"
-    }else if(!isNaN(namee.value) ){
+    }else if(/\d/.test(namee.value) ){
         nameL.innerText =  "Name should be alphabets"
     }else {
         nameL.innerText = ''
     }
 })
 
+
+emailL.addEventListener('input', (e) => {
+     if(Email.value.match(/^[^ ]+@[^ ]+\.[a-z]{2,3}$/)){
+        emailL.innerText = ''
+    }else {
+        emailL.innerText = 'Should use a valid email.'
+    }
+})
 
