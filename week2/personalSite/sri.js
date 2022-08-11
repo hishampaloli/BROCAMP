@@ -93,6 +93,13 @@ namee.addEventListener('input', (e) => {
     }
 })
 
+number.addEventListener('input', (e) => {
+    if(number.value.length > 10){
+        numberL.innerText = "Number should be a 10 digit number";
+    }else {
+        numberL.innerText = ''
+    }
+})
 
 emailL.addEventListener('input', (e) => {
      if(Email.value.match(/^[^ ]+@[^ ]+\.[a-z]{2,3}$/)){
