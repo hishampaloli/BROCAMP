@@ -23,3 +23,19 @@ function writeText() {
   
     setTimeout(writeText, speed)
 }
+
+function hi(){
+  return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            resolve("hii")
+        }, 2000);
+    })
+}
+ 
+
+ function getuser() {
+    let name =  hi();
+    console.log(name);
+}
+
+getuser();
