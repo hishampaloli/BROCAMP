@@ -108,7 +108,7 @@ app
           req.session.user = doc;
           res.redirect("/dashboard");
         }
-      });
+      })
     } else {
       res.redirect("/signup");
     }
